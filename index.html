@@ -1,0 +1,12 @@
+<html>
+  <form onsubmit="handleSubmit(event)">
+    <input name="name" value="" />
+    <button type="submit">submit</button>
+  </form>
+  <script>
+    function handleSubmit(e) {
+      e.preventDefault();
+      alert(`hello ${e.target.elements.name.value}`);
+    }
+  </script>
+</html>
